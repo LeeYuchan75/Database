@@ -187,6 +187,72 @@ enrollment 테이블에서 student_id, course_id, semester, year 네 개의 컬�
 
 즉, 모든 열이 같아야 중복으로 허용(3개의 attribute가 동일하더라도 1개의 attribute가 다르면 중복이 아님)
 
+<br/>
+
+## Basic Query Structure
+
+**SELECT** : 반환할 열(속성)을 지정함 (예: SELECT name, age 는 name과 age 열만 반환)
+
+**FROM** : 데이터를 조회할 테이블(관계)을 지정함 (예: FROM students, courses 는 students와 courses 테이블에서 데이터를 가져옴)
+
+**WHERE** : 조건을 지정하여 반환할 행을 필터링 (예: WHERE age > 18 는 age가 18보다 큰 행만 반환)
+
+<br/>
+
+## 중복 제거 : distinct 
+
+기본적으로 SQL 쿼리에서는 중복된 값도 결과로 반환함. 만약 테이블에 같은 값이 여러 번 존재하면, 해당 값은 쿼리 결과에 중복으로 표현
+
+```ruby
+SELECT DISTINCT dept_name
+FROM instructor;
+```
+
+중복된 값을 제거하려면 SELECT 뒤에 DISTINCT 키워드를 사용해야함
+
+<br/>
+
+중복값은 기본적으로 허용하지만, 명시적으로 표현하고 싶으면 all 키워드를 사용 
+
+```ruby
+SELECT ALL dept_name
+FROM instructor;
+```
+
+<br/>
+
+## The select Clause
+
+**select*** : * 는 모든 속성 선택을 의미함 
+
+```ruby
+SELECT *
+FROM country;
+```
+이 쿼리는 country 테이블의 모든 열을 선택하여 반환함 
+
+<br/>
+
+**as** : as를 이용해서 열 이름을 지정함 
+
+```ruby
+SELECT name AS Student_Name, age AS Student_Age
+FROM students;
+```
+
+위 예시 코드를 보면 students 테이블에서 name이라는 값의 열 이름을 Student_Name로 하고, age라는 값의 열 이름을 Student_Age 라고 지정함
+
+<br/>
+
+```ruby
+SELECT 5 * 10 AS Multiplication
+form test;
+```
+
+또 다른 예시로 5*10의 값, 또는 문자열 (ex: '487') 같은 데이터도 가능함 
+
+
+
 
 
 

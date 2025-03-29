@@ -277,6 +277,7 @@ SELECT name, FLOOR(Population / 1000) AS Pop10k
 FROM country;
 ```
 
+FLOOR(x) : 소수점 이하를 버리고 정수만 반환
 
 
 

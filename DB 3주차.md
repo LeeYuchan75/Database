@@ -1,4 +1,4 @@
-## DataBase 실습 
+## DataBase 실습 및 문법
 
 ```ruby
 create database university;
@@ -199,6 +199,23 @@ enrollment 테이블에서 student_id, course_id, semester, year 네 개의 컬�
 
 <br/>
 
+## literal and from
+
+literal : SQL에서 고정된 값(문자열, 숫자 등)을 의미. (ex: 'A', 100, 또는 '2025-03-29')
+
+```ruby
+SELECT 'A'
+FROM country;
+```
+
+SELECT 'A': 'A'는 리터럴임. 여기서 SQL은 특정 테이블이나 열에서 데이터를 가져오지 않고, 단순히 고정된 문자열 'A'를 반환하도록 요청함
+
+FROM country: FROM 절에 명시된 테이블(country)이 존재하기 때문에, 이 테이블의 튜플(행) 수만큼 리터럴 값 'A'가 반복됨
+
+**즉, where을 통한 조건이 없으면 from의 테이블의 행의 수 만큼 literal를 반복한다는 의미**
+
+<br/>
+
 ## 중복 제거 : distinct 
 
 기본적으로 SQL 쿼리에서는 중복된 값도 결과로 반환함. 만약 테이블에 같은 값이 여러 번 존재하면, 해당 값은 쿼리 결과에 중복으로 표현
@@ -249,7 +266,22 @@ SELECT 5 * 10 AS Multiplication
 form test;
 ```
 
-또 다른 예시로 5*10의 값, 또는 문자열 (ex: '487') 같은 데이터도 가능함 
+다른 예시로 5*10의 값, 또는 문자열 (ex: '487') 같은 데이터도 가능함 
+
+<br/>
+
+또한, SELECT 절에 산술 연산자(+, -, *, /)와 함수(예: FLOOR, ROUND 등)를 사용할 수 있다 
+
+```ruby
+SELECT name, FLOOR(Population / 1000) AS Pop10k
+FROM country;
+```
+
+
+
+
+
+
 
 
 

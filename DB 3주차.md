@@ -185,7 +185,7 @@ create table enrollment (
 ```
 enrollment 테이블에서 student_id, course_id, semester, year 네 개의 컬럼을 복합 기본 키로 설정함
 
-이 조합이 유일해야 하므로, 동일한 학생이 동일한 과목을 여러 학기나 여러 해에 수강할 수는 있지만, 하나의 학기와 연도에서는 중복된 수강 기록이 존재할 수 없음
+즉, 모든 열이 같아야 중복으로 허용(3개의 attribute가 동일하더라도 1개의 attribute가 다르면 중복이 아님)
 
 
 

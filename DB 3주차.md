@@ -279,6 +279,39 @@ FROM country;
 
 FLOOR(x) : 소수점 이하를 버리고 정수만 반환
 
+<br/>
+
+## 조건문 
+
+예시 코드 1
+
+```ruby
+SELECT name  
+FROM country  
+WHERE (continent = 'Asia' AND Population >= 50000000) 
+      OR (continent = 'Europe' AND Population < 1000000)
+      AND NOT (name = 'Monaco');
+```
+
+<br/>
+
+예시 코드 2
+
+```ruby
+SELECT ID, name, salary 
+FROM instructor
+WHERE salary >= 80000
+  AND LENGTH(name) BETWEEN 4 AND 6;
+```
+
+LENGTH(x) : x의 길이 추출 
+
+BETWEEN A AND B : 범위 표현 
+
+
+
+
+
 
 
 

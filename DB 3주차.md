@@ -394,6 +394,23 @@ from instructor as t
 where length(t.name) > 6;
 ```
 
+<br/>
+
+## order by
+
+ORDER BY 절을 사용하면 쿼리 결과를 원하는 순서로 정렬할 수 있음. 기본적으로 오름차순(ascending, ASC)이 기본값
+
+```ruby
+select name 
+from instructor as t
+order by name; -> 알파벳 순서대로 정렬됨
+```
+
+
+
+
+
+
 
 
 

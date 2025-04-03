@@ -58,15 +58,27 @@ Schema Diagram : 데이터베이스의 스키마(구조)를 그림으로 표현�
 
 Relational Query Language : 관계형 데이터베이스에서 테이블을 조작하고 결과를 테이블 형태로 반환하는 언어
 
+<br/>
 
+## Relational Algebra
 
+Relational Algebra : 관계형 데이터베이스에서 데이터를 조작하고 질의하는 형식적(query language) 연산 집합
 
+1. σ (select) : 조건을 만족하는 행(튜플)만 선택, SQL의 WHERE 절과 유사
 
+2. π (Project) : 특정 속성(컬럼)만 선택, SQL의 SELECT (컬럼 선택)과 유사
 
+3. × (Cartesian Product) : 두 테이블의 모든 조합을 반환 (각 행을 서로 조합), SQL에서 CROSS JOIN과 유사
 
+4. ⋈𝜃 (Theta Join) : 𝜃(조건) 을 만족하는 경우에만 조인
 
+5. ⋈ (Natural Join) : 공통 속성이 자동으로 매칭되는 조인
 
+6. ∪ (Union) : 두 테이블의 모든 행을 합침 (중복 제거), SQL의 UNION과 유사
 
+7. − (Set Difference) : 첫 번째 테이블에 있는 데이터 중, 두 번째 테이블에는 없는 데이터만 반환, SQL의 EXCEPT 연산과 유사 
+
+8.  ∧ (and), ∨(or), ㄱ (not)
 
 
 

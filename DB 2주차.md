@@ -120,7 +120,7 @@ selection predicate : σ 오른쪽 하단에 있는 부분으로 **조건을 의
 
 ![스크린샷 2025-04-03 123214](https://github.com/user-attachments/assets/999fed00-d0b0-4eef-bfb1-c0d91461a6bf)
 
-
+**Natural Join은 관계의 교집합(∩)과 같다**
 
 
 

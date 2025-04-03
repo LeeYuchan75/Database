@@ -126,9 +126,7 @@ selection predicate : σ 오른쪽 하단에 있는 부분으로 **조건을 의
 
 ## union operation 
 
-**1. 두 table의 arity(열 개수)가 돟일해야한다**
 
-**2. 속성들의 domain이 일치해야 한다**
 
 <br/>
 
@@ -140,6 +138,15 @@ selection predicate : σ 오른쪽 하단에 있는 부분으로 **조건을 의
 
 ![스크린샷 2025-04-03 162911](https://github.com/user-attachments/assets/07907cc7-8572-4dac-9463-c18da142f186)
 
+<br/>
+
+## Set-Intersection Operation
+
+**1. 두 table의 arity(열 개수)가 돟일해야한다**
+
+**2. 속성들의 domain이 일치해야 한다**
+
+union 속성과 동일 
 
 
 

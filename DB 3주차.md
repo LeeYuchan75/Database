@@ -259,6 +259,15 @@ FROM students;
 
 위 예시 코드를 보면 students 테이블에서 name이라는 값의 열 이름을 Student_Name로 하고, age라는 값의 열 이름을 Student_Age 라고 지정함
 
+추가적으로 아래 예시와 같이 table을 다른 이름으로 나눠서 사용할 수 있음 
+
+<br/>
+
+```ruby
+SELECT DISTINCT C1.name /*select 표시할 때 앞에 rename 써주기*/
+FROM country AS C1, country AS C2
+WHERE C1.population > C2.population AND C2.continent = 'Asia';
+```
 <br/>
 
 ```ruby
@@ -307,6 +316,46 @@ WHERE salary >= 80000
 LENGTH(x) : x의 길이 추출 
 
 BETWEEN A AND B : 범위 표현 
+
+<br/>
+
+## string operation
+
+## upper() and lower()
+
+대소문자 변환하는 연산 
+
+```ruby
+SELECT * FROM instructor 
+WHERE UPPER(name) = 'ALICE';
+```
+
+<br/>
+
+## like
+
+SQL에서는 문자열을 비교할 때 LIKE 연산자를 사용하고, 특수 문자 %와 _을 활용하여 패턴을 정의할 수 있음
+
+**1. % (퍼센트) : 아무 글자나 여러 개 올 수 있다는 의미**
+
+예시1) 'Comp%'
+
+'Comp'로 시작하는 모든 단어를 찾음
+
+가능한 결과: "Computer", "Compilers", "Comp123"
+
+<br/>
+
+예시2) '%SQL%'
+
+"SQL"이 어디든 포함된 단어를 찾음
+
+가능한 결과: "Advanced SQL", "SQL Basics", "Introduction to SQL"
+
+<br/>
+
+
+
 
 
 

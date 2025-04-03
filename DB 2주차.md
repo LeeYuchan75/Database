@@ -134,8 +134,9 @@ selection predicate : σ 오른쪽 하단에 있는 부분으로 **조건을 의
 
 ![image](https://github.com/user-attachments/assets/22cdedca-0e9c-4c22-b93b-42e675900017)
 
+![스크린샷 2025-04-03 162754](https://github.com/user-attachments/assets/b0fe632a-56b0-460a-a834-13e2aabd8697)
 
-
+![스크린샷 2025-04-03 162911](https://github.com/user-attachments/assets/07907cc7-8572-4dac-9463-c18da142f186)
 
 
 

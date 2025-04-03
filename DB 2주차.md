@@ -122,9 +122,17 @@ selection predicate : σ 오른쪽 하단에 있는 부분으로 **조건을 의
 
 **Natural Join은 관계의 교집합(∩)과 같다**
 
+<br/>
+
+## union operation 
+
+**1. 두 table의 arity(열 개수)가 돟일해야한다**
+
+**2. 속성들의 domain이 일치해야 한다**
 
 
 
+![image](https://github.com/user-attachments/assets/22cdedca-0e9c-4c22-b93b-42e675900017)
 
 
 

@@ -148,7 +148,11 @@ selection predicate : σ 오른쪽 하단에 있는 부분으로 **조건을 의
 
 union 속성과 동일 
 
+<br/>
 
+## 예시 
+
+![스크린샷 2025-04-03 163837](https://github.com/user-attachments/assets/d3dbfa09-6c3b-495a-8525-aaf100fa8510)
 
 
 

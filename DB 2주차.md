@@ -5,7 +5,7 @@ Relation Data model : 데이터를 행(Row)과 열(Column)로 구성된 테이�
 ![image](https://github.com/user-attachments/assets/58bc7aab-b348-49a4-b804-598adf2c2da8)
 
 왼쪽에 있는 표를 오른쪽과 같이 relation model로 데이터베이스 구축 
-
+ 
 <br/>
 
 전체적인 표 : tabel 

@@ -80,10 +80,45 @@ Relational Algebra : 관계형 데이터베이스에서 데이터를 조작하�
 
 8.  ∧ (and), ∨(or), ㄱ (not)
 
+<br/>
 
+## Select Operation
 
+selection predicate : σ 오른쪽 하단에 있는 부분으로 **조건을 의미**
 
+괄호에 있는 부분은 table을 의미
 
+![image](https://github.com/user-attachments/assets/f84a541f-85b2-49ed-a2b9-a6e26b8d95f1)
+
+<br/>
+
+## Project Opertaion
+
+π 오른쪽 아래에 있는 속성만을 반환함 
+
+![image](https://github.com/user-attachments/assets/7beb3ed7-1a39-4b47-80fe-69661a84a689)
+
+<br/>
+
+## Cartesian Product
+
+문제점 : Cartesian Product는 모든 조합을 반환하므로 개발자가 원하고자 하는 데이터만 얻기 어려움 
+
+-> Theta Join 또는 Natural Join으로 문제 해결 
+
+<br/>
+
+## Join Operation
+
+![image](https://github.com/user-attachments/assets/33bebd0c-d328-4b5d-b512-5dfaec8cc636)
+
+**Natural Join 과정**
+
+![스크린샷 2025-04-03 123157](https://github.com/user-attachments/assets/81bd9d24-0c01-4092-9de8-1e786ffe3b69)
+
+![스크린샷 2025-04-03 123208](https://github.com/user-attachments/assets/7952068b-f8bb-4c22-b5dc-3e27fb7ad311)
+
+![스크린샷 2025-04-03 123214](https://github.com/user-attachments/assets/999fed00-d0b0-4eef-bfb1-c0d91461a6bf)
 
 
 

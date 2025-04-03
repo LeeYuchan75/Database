@@ -130,7 +130,9 @@ selection predicate : σ 오른쪽 하단에 있는 부분으로 **조건을 의
 
 **2. 속성들의 domain이 일치해야 한다**
 
+<br/>
 
+## union operation 예시
 
 ![image](https://github.com/user-attachments/assets/22cdedca-0e9c-4c22-b93b-42e675900017)
 

@@ -250,6 +250,14 @@ FROM country;
 ```
 이 쿼리는 country 테이블의 모든 열을 선택하여 반환함 
 
+또한 아래와 같이 사용할 수도 있음 
+
+```ruby
+select  instructor.*
+from  instructor, teaches
+where instructor.ID = teaches.ID;
+```
+
 <br/>
 
 ## as 

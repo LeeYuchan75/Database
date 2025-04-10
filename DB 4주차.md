@@ -184,7 +184,7 @@ WHERE population >= 100000000
 ORDER BY name;  ▷ 이렇게 문단을 구분해야함 
 ```
 
-위 코드처럼 교집합이나, 합집합 과정에서 한 select 문 내부에 order by가 있으면 오류 발생 
+위 코드처럼 교집합(intersect)이나, 합집합(union), 차집합(except) 과정에서 한 select 문 내부에 order by가 있으면 오류 발생 
 
 <br/>
 
@@ -209,10 +209,33 @@ where population >= 100000000;
 ```
 ![image](https://github.com/user-attachments/assets/b27b97a4-f928-406f-8258-b678bcff54a6)
 
+<br/>
 
+## except
 
+EXCEPT 연산은 수학에서의 차집합(A − B) 과 동일한 개념
 
+except 기준 위의 select문의 속성을 튜플과]에서 아래의 select 문의 속성의 튜플을 뺌
 
+합집합, 교집합과 동일하게 order by 위치를 주의하고 속성 개수 및 타입이 동일해야함
+
+<br/>
+
+## 예시 
+
+```ruby
+select name, population, continent
+from country
+where continent = 'asia'
+
+except
+
+select name, population, continent
+from country
+where population >= 100000000;
+```
+
+![image](https://github.com/user-attachments/assets/fddc63cb-a575-4d21-bde8-471bee09ca28)
 
 
 

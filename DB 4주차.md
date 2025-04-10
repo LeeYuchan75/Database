@@ -119,7 +119,27 @@ FROM country
 WHERE (continent, population) = ('Asia', 46844000);
 ```
 
+<br/>
 
+## Union 
+
+UNION : 두 개 이상의 SELECT 결과를 합쳐 하나의 결과로 만드는 집합 연산자 -> **자동으로 중복 제거 됨**
+
+```ruby
+SELECT name, continent 
+FROM country 
+WHERE continent = 'Asia'
+
+UNION
+
+SELECT name, continent 
+FROM country 
+WHERE continent = 'Europe'
+
+ORDER BY name;
+```
+
+![image](https://github.com/user-attachments/assets/cfe8042d-fca2-48b9-a28b-41ffdabedf0b)
 
 
 

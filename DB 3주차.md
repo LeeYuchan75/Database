@@ -240,7 +240,9 @@ FROM instructor;
 
 ## The select Clause
 
-**select*** : * 는 모든 속성 선택을 의미함 
+## select* 
+
+select* : 모든 속성 선택을 의미함 
 
 ```ruby
 SELECT *
@@ -250,12 +252,19 @@ FROM country;
 
 <br/>
 
-**as** : as를 이용해서 열 이름을 지정함 
+## as 
+
+as : 열 이름을 새롭게 지정 
+
+**as의 중요한 점은, as 사용 전의 이름은 더이상 사용하면 안된다는 것이다** 
 
 ```ruby
 SELECT name AS Student_Name, age AS Student_Age
 FROM students;
 ```
+
+
+
 
 위 예시 코드를 보면 students 테이블에서 name이라는 값의 열 이름을 Student_Name로 하고, age라는 값의 열 이름을 Student_Age 라고 지정함
 

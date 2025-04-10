@@ -194,6 +194,8 @@ ORDER BY name;  ▷ 이렇게 문단을 구분해야함
 
 두 SELECT 문의 결과에서 공통된 행만 반환 -> 중복은 자동 제거 됨 
 
+합집합과 동일하게 열의 개수와 타입이 동일해야함 
+
 ```ruby
 select name, continent, population
 from country

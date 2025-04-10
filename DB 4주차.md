@@ -237,13 +237,49 @@ where population >= 100000000;
 
 ![image](https://github.com/user-attachments/assets/fddc63cb-a575-4d21-bde8-471bee09ca28)
 
+<br/>
 
+## 중복 유지 -> all 
 
+만약 중복을 제거하지 않고 모든 결과(중복 포함)를 보고 싶다면, 아래의 ALL 버전을 사용해야 함
 
+1. UNION ALL
 
+2. INTERSECT ALL
 
+3. EXCEPT ALL
 
+<br/>
 
+## Null
+
+NULL : 값이 없거나 알 수 없음을 의미
+
+<br/>
+
+## Null 특징
+
+1. 어떤 수치 연산이든 NULL이 포함되면 결과는 항상 NULL (예: 5 + NULL → NULL)
+
+2.  NULL과 비교하면 결과는 UNKNOWN (예외 존재 -> 3번에서 설명) (ex1: 5 < NULL → UNKNOWN | ex2: NULL = NULL → UNKNOWN | ex3: NULL <> NULL → UNKNOWN)
+
+3. 마지막 특징은 아래 그림으로 설명
+
+![image](https://github.com/user-attachments/assets/2bf4fdb5-bda7-4154-96b2-b940baad1997)
+
+<br/>
+
+null은 sql에서 아래와 같이 사용한다 
+
+1. IS NULL → 값이 NULL인 경우 참
+
+2. IS NOT NULL → 값이 존재하는 경우 참
+
+```ruby
+SELECT name
+FROM instructor
+WHERE salary IS NULL;
+```
 
 
 

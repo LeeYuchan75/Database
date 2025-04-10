@@ -121,9 +121,11 @@ WHERE (continent, population) = ('Asia', 46844000);
 
 <br/>
 
-## Union 
+## Union
 
 UNION : 두 개 이상의 SELECT 결과를 합쳐 하나의 결과로 만드는 집합 연산자 -> **자동으로 중복 제거 됨**
+
+**UNION 을 할 때, 반드시 열의 개수와 데이터 타입이 같아야 함**
 
 ```ruby
 SELECT name, continent 
@@ -138,10 +140,72 @@ WHERE continent = 'Europe'
 
 ORDER BY name;
 ```
-
 ![image](https://github.com/user-attachments/assets/cfe8042d-fca2-48b9-a28b-41ffdabedf0b)
 
+<br/>
 
+UNION을 사용할 경우, **ORDER BY는 쿼리 전체의 맨 마지막에 사용해야함 (select문과 문단을 구별해야 함)** -> 어차피 하나의 속성에 모두 들어가므로 한번만 해줘도 모두 정렬됨 
+
+<br/>
+
+## 오류 예시 
+
+```ruby
+SELECT name FROM country WHERE continent = 'Asia'
+INTERSECT
+SELECT name FROM country WHERE population >= 100000000 ORDER BY name;  -- ❌ 오류 발생
+
+또는
+
+SELECT name
+FROM country
+WHERE continent = 'Asia'
+
+INTERSECT
+
+SELECT name
+FROM country
+WHERE population >= 100000000
+ORDER BY name;  -- ❌ 오류 발생
+
+
+정답 예시
+
+SELECT name
+FROM country
+WHERE continent = 'Asia'
+
+INTERSECT
+
+SELECT name
+FROM country
+WHERE population >= 100000000
+
+ORDER BY name;  ▷ 이렇게 문단을 구분해야함 
+```
+
+위 코드처럼 교집합이나, 합집합 과정에서 한 select 문 내부에 order by가 있으면 오류 발생 
+
+<br/>
+
+## Intersect
+
+수학적 교집합(∩) 에 해당하는 SQL 연산
+
+두 SELECT 문의 결과에서 공통된 행만 반환 -> 중복은 자동 제거 됨 
+
+```ruby
+select name, continent, population
+from country
+where continent = 'asia'
+
+intersect
+
+select name, continent, population
+from country
+where population >= 100000000;
+```
+![image](https://github.com/user-attachments/assets/b27b97a4-f928-406f-8258-b678bcff54a6)
 
 
 

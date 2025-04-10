@@ -67,17 +67,16 @@ where length(t.name) > 6;
 ORDER BY 절을 사용하면 쿼리 결과를 원하는 순서로 정렬할 수 있음. 기본적으로 오름차순(ascending, ASC)이 기본값
 
 ```ruby
+오름차순 예시
 select name 
 from instructor as t
 order by name; -> 알파벳 순서대로 정렬됨 (order by name adc; 과 동일)
-```
 
-또한 desc를 이용하여 아래와 같이 내림차순으로 표현 가능 
 
-```ruby
+내림차순 예시
 select distinct name
 from instructor
-order by name desc;
+order by name desc; -> desc를 이요하여 내림차순으로 정렬
 ```
 
 만약 order by salary desc, name asc; 와 같이 된다면, 처음 salary를 내림차순으로 정렬하고, **해당 salary의 이름이 같은 경우 name은 오름차순으로 정렬됨**

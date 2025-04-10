@@ -18,4 +18,14 @@ from section as s1, course as c1
 where s1.semester = 'spring' and s1.year = '2018' and s1.course_id = c1.course_id;
 ```
 
-위 코드에서 
+<br/>
+
+## 코드 설명 
+
+위 코드에서 2017 가을(fall), 또는 2017 봄(spring)에 열린 강의를 찾기 위해 합집합(union) 사용 
+
+이후, where 문을 이용해서 연도와 계절을 설정하고, 마지막 부분에 s1.course_id = c1.course_id를 추가 -> **해당 연도와 계절을 구한 table 의 course_id와 coures table course_id가 같으면 id를 가져온다는 의미** 
+
+이렇게 되면, 최종적으로 얻는 table은 해당 연도 계절을 만족하는 course_id 테이블이 완성되고, **이것은 section table과 course table를 연결했다는 의미이다**
+
+연결을 성공하면 마음대로 course table에서 원하는 정보를 select 할 수 있고, 결과적으로 course의 dept_name을 추출할 수 있게 됨 

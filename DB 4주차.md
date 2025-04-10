@@ -152,7 +152,7 @@ UNION을 사용할 경우, **ORDER BY는 쿼리 전체의 맨 마지막에 사�
 
 ```ruby
 SELECT name FROM country WHERE continent = 'Asia'
-INTERSECT
+union
 SELECT name FROM country WHERE population >= 100000000 ORDER BY name;  -- ❌ 오류 발생
 
 또는
@@ -161,7 +161,7 @@ SELECT name
 FROM country
 WHERE continent = 'Asia'
 
-INTERSECT
+union
 
 SELECT name
 FROM country
@@ -175,7 +175,7 @@ SELECT name
 FROM country
 WHERE continent = 'Asia'
 
-INTERSECT
+union
 
 SELECT name
 FROM country

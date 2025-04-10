@@ -259,7 +259,7 @@ as : 열 이름을 새롭게 지정
 **as의 중요한 점은, as 사용 전의 이름은 더이상 사용하면 안된다는 것이다** 
 
 ```ruby
-SELECT name AS Student_Name, age AS Student_Age
+SELECT name AS Student_Name, age AS Student_Age  ▷ as 사용 후 'Student_Name' 만 사용 가능, 'name' 사용 불가, age도 동일한 이유로 사용 불가 
 FROM students;
 ```
 

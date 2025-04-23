@@ -293,6 +293,19 @@ WHERE C1.population > C2.population AND C2.continent = 'Asia';
 ```
 <br/>
 
+만약 아래 코드와 같이 table이 하나만 올 때는 DBMS 입장에서 name이 당연히 instructor table에서 올 것이라고 생각해 모호하지 않아서 사용해도 됨
+
+하지만 table이 여러개일 때, select문에 어떤 table에서 왔는지 표시도 없이 name만 사용하면 DBMS 입장에서는 모호하기 때문에 오류가 생긴다 
+
+```ruby
+select name 
+from instructor as t
+order by name;
+```
+
+<br/>
+
+
 ```ruby
 SELECT 5 * 10 AS Multiplication
 from test;

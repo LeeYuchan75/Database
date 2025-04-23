@@ -40,6 +40,8 @@ Relation Data model : 데이터를 행(Row)과 열(Column)로 구성된 테이�
 
 ## Key
 
+![image](https://github.com/user-attachments/assets/922f00ff-3e33-4c70-aafc-dcd88b1cb189)
+
 1. Super Key: 모든 행을 유일하게 식별할 수 있는 속성(집합)
 
 2. Candidate Key: 슈퍼키 중에서 최소성을 만족하는 키

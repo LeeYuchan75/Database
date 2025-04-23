@@ -372,6 +372,18 @@ FROM instructor, teaches;
 
 ![image](https://github.com/user-attachments/assets/44a4aa1e-f099-4952-b77f-895d01a82e04)
 
+우선, from에서 table이 2개가 오면, 이것은 카르테시안 곱이다 
+
+따라서 내부적으로 오른쪽 표와 같이 생성이 된다
+
+왼쪽 하단 코드는 다음을 의미한다 
+
+- T.person = 'Bob' → T 테이블에서 Bob을 찾고
+
+- T.supervisor = S.person → T의 상사(Alice)가 S 테이블의 직원(Alice)과 같을 때 (표를 보고 판단)
+
+- S.supervisor는 Alice의 상사인 David가 된다 (오른쪽에서 조건을 만족하는 행의 S.superviser를 가져옴)
+
 
 
 

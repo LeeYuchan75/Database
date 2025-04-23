@@ -271,9 +271,6 @@ SELECT name AS Student_Name, age AS Student_Age  ▷ as 사용 후 'Student_Name
 FROM students;
 ```
 
-
-
-
 위 예시 코드를 보면 students 테이블에서 name이라는 값의 열 이름을 Student_Name로 하고, age라는 값의 열 이름을 Student_Age 라고 지정함
 
 추가적으로 아래 예시와 같이 table을 다른 이름으로 나눠서 사용할 수 있음 
@@ -281,7 +278,7 @@ FROM students;
 <br/>
 
 ```ruby
-SELECT DISTINCT C1.name /*select 표시할 때 앞에 rename 써주기*/
+SELECT DISTINCT C1.name
 FROM country AS C1, country AS C2
 WHERE C1.population > C2.population AND C2.continent = 'Asia';
 ```
@@ -289,7 +286,7 @@ WHERE C1.population > C2.population AND C2.continent = 'Asia';
 
 ```ruby
 SELECT 5 * 10 AS Multiplication
-form test;
+from test;
 ```
 
 다른 예시로 5*10의 값, 또는 문자열 (ex: '487') 같은 데이터도 가능함 

@@ -353,8 +353,18 @@ SELECT * FROM instructor
 WHERE UPPER(name) = 'ALICE';
 ```
 
+<br/>
 
+## 예시 문제 
 
+![image](https://github.com/user-attachments/assets/3376fd41-f97f-4408-aee0-4036f690c2bb)
+
+**정답 코드**
+
+```ruby
+SELECT *
+FROM instructor, teaches;
+```
 
 
 

@@ -227,6 +227,15 @@ FROM instructor;
 
 중복된 값을 제거하려면 SELECT 뒤에 DISTINCT 키워드를 사용해야함
 
+만약 코드가 아래와 같이 distinct를 쓰고 열이 2개 이상이면, 해당 열이 모두 동일해야 중복으로 인정한다 
+
+```ruby
+SELECT DISTINCT dept_name,salary
+FROM instructor;
+```
+
+즉, dept_name과 salary가 둘 다 같은 튜플이 2개 이상일 때 중복이 발생한다
+
 <br/>
 
 중복값은 기본적으로 허용하지만, 명시적으로 표현하고 싶으면 all 키워드를 사용 

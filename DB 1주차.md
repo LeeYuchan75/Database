@@ -22,17 +22,17 @@ DBMS에는 특정 기업에 대한 정보가 포함되어 있다
 
 <br/>
 
-**Database systems are used to manage collections of data that are:**
+데이터베이스 시스템은 다음과 같은 데이터 컬렉션을 관리하는 데 사용됨
 
- • Highly valuable
+• 매우 가치 있는
 
- • Relatively large
- 
- • Accessed by multiple users and applications, often at the same time
- 
- A modern database system is a complex software system whose task is to manage a large, complex collection of data
- 
-Databases touch all aspects of our lives (ex: 온라인 쇼핑, 은행 시스템, SNS 등등)
+• 비교적 큰
+
+• 여러 사용자와 애플리케이션이 동시에 액세스하는 경우가 많습니다
+
+현대 데이터베이스 시스템은 방대한 양의 복잡한 데이터를 관리하는 것을 목표로 하는 복잡한 소프트웨어 시스템입니다
+
+데이터베이스는 우리 삶의 모든 측면에 영향을 미칩니다(예: 온라인 쇼핑, 은행 시스템, SNS 등등)
 
 <br/>
 

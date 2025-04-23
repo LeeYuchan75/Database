@@ -366,6 +366,11 @@ SELECT *
 FROM instructor, teaches;
 ```
 
+<br/>
+
+## self join 심화 
+
+![image](https://github.com/user-attachments/assets/44a4aa1e-f099-4952-b77f-895d01a82e04)
 
 
 

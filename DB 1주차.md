@@ -12,13 +12,13 @@ Database management system (DBMS) is the software that interacts with end users,
 
 ## 기업의 DBMS 
 
-DBMS contains information about a particular enterprise
+DBMS에는 특정 기업에 대한 정보가 포함되어 있다
 
-1. A collection of interrelated data
+1. 상호 연관된 데이터 모음
 
-2. A set of programs to access the data
+2. 데이터에 액세스할 수 있는 프로그램 세트
 
-3. An environment that is both convenient and efficient to use
+3. 사용하기 편리하면서도 효율적인 환경
 
 <br/>
 

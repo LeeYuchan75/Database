@@ -143,13 +143,25 @@ ex: instructor = (ID, name, salary), course = (course_id, title, credits)
 
 또한, 속성들 중 일부는 **기본 키(primary key)** 가 된다. 기본 키는 각 엔터티를 고유하게 식별한다 
 
+<br/>
 
+**예시**
 
+![IMG_3164](https://github.com/user-attachments/assets/1aa37c19-c05d-4bbc-9acc-5464f686eea2)
 
+<br/>
 
+## Entity sets & ER Diagram
 
+아래는 Entity set을 ER Diagram으로 표현하는 방식이다 
 
+![image](https://github.com/user-attachments/assets/9da7189d-6221-442b-b415-1d9708ad2774)
 
+- 파란색 직사각형은 엔터티 집합을 의미한다 (ex: instructor, student)
+
+- 속성들은 직사각형 안에 나열된다 (ex: name, salary 등)
+
+- 밑줄은 기본 키(primary key) 속성을 나타낸다 (ex: ID에 밑줄 → 기본 키)
 
 
 

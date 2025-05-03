@@ -169,9 +169,15 @@ ex: instructor = (ID, name, salary), course = (course_id, title, credits)
 
 **Relationship sets**은 서로 다른 **Entity 사이의 관계** 와 그것을 모아 놓은 **관계 집합** 을 설명
 
+<br/>
 
+**예시**
 
+![image](https://github.com/user-attachments/assets/69791b46-1ef2-4efb-b3fe-891232de3d9f)
 
+student Entity와 instructor entity가 서로 advisor(지도 교수)라는 관계로 연결됨 (Peltier 학생의 지도교수는 Einstein이다)
+
+수학적으로 표현하면 다음과 같다 (44553,22222) ∈ advisor
 
 
 

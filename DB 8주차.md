@@ -132,8 +132,16 @@ ER 모델은 **ER 다이어그램**이라는 시각적 표현을 가지고 있�
 
 위 표처럼 Entity는 현실 세계의 관점에서 생각한 것이고 우리는 이러한 현실 세계를 컴퓨터로 구현을 해야하는 역할을 한다 
 
+<br/>
+
+내용을 이어서 설명하자면 
+
+하나의 엔터티는 여러 개의 속성으로 표현이 된다. 여기서 속성(attribute)이란 그 엔터티의 특징 설명하는 역할을 하고, 우리가 ralation table에서 사용한 attribute와 동일한개념이다 
+
+ex: instructor = (ID, name, salary), course = (course_id, title, credits)
 
 
+또한, 속성들 중 일부는 **기본 키(primary key)** 가 된다. 기본 키는 각 엔터티를 고유하게 식별한다 
 
 
 

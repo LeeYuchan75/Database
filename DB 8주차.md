@@ -66,9 +66,33 @@
 
 이 단계의 핵심 포인트는 개념적 설계로 옮기기 위한 **구조화된 모델 설계 및 관계 정의**이다 
 
+<br/>
 
+## Final Phase
 
+마지막 단계에서는 앞에서 만든 개념적 모델을 **실제 데이터베이스 설계와 성능에 맞게 구체화**하는 것이다
 
+이 과정은 크게 **Logical Design**과 **Physical Design**으로 분류되고, Logical Design는 **Business decision**과 **Computer Science decision**으로 분리가 된다 
+
+<bt/>
+
+**1. Logical Design**
+
+이 단계에서는 좋은 관계 스키마의 집합을 찾아야 한다. 즉, 어떤 테이블(릴레이션)을 만들고, 어떤 속성을 포함할지 결정해야 적절하게 결정해야 한다 
+
+- **Business decision** : 데이터베이스에 어떤 속성을 저장할 것인가? (고객 테이블에 이름, 이메일, 전화번호, 배송 주소를 저장할 것인가?)
+
+- **Computer Science decision** : 어떤 릴레이션(테이블)을 만들고, 어떤 속성을 어떤 테이블에 나눌 것인가? (ex: 고객(Customer), 상품(Product), 주문(Order), 주문 상세(OrderItem) 테이블을 따로 만들 것인가?)
+
+<br/>
+
+**2. Physical Design**
+
+Physical Designd은 데이터베이스의 물리적 배치를 결정하는 것이다 
+
+쉽게 말해 어디에 저장을 할 것인지를 결정
+
+ex: 고객 테이블에 인덱스를 설정하여 빠른 검색이 가능하도록 구현
 
 
 

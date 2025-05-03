@@ -179,7 +179,9 @@ student Entity와 instructor entity가 서로 advisor(지도 교수)라는 관�
 
 수학적으로 표현하면 다음과 같다 (44553,22222) ∈ advisor
 
+우리가 앞에서 table를 구현한 것을 예로 들면, student와 course table이 있을 때, 두 table를 task라는 table를 이용하여 서로 연결하였다. 
 
+이때 student와 course table은 Entity이고 task table은 relationship set의 역할을 한다
 
 
 

@@ -163,7 +163,11 @@ ex: instructor = (ID, name, salary), course = (course_id, title, credits)
 
 - 밑줄은 기본 키(primary key) 속성을 나타낸다 (ex: ID에 밑줄 → 기본 키)
 
+<br/>
 
+## Relationship Sets
+
+**Relationship sets**은 서로 다른 **Entity 사이의 관계** 와 그것을 모아 놓은 **관계 집합** 을 설명
 
 
 

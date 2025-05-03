@@ -259,13 +259,27 @@ student Entity와 instructor entity가 서로 advisor(지도 교수)라는 관�
 
 이렇게 엔터티(테이블)가 관계에서 두 번 이상 등장할 때 각각의 역할을 **구분하기 위해 붙이는 이름(label)** 을 role 이라고 한다 
 
+<br/>
 
+## Degree of a Relationship Set
 
+Relationship Set의 Dgree, 즉 **차수**란 어떤 **관계(relationship)** 에 참여하는 **엔터티 집합(entity set)의 개수**를 말한다.
 
+![image](https://github.com/user-attachments/assets/25bb99db-040f-4908-8a39-53dbed693cd9)
 
+예를 들어 위 예시에서는 관계(advisor)에 연결된 Entity가 2개 이므로 차수는 2이다 
 
+<br/>
 
+## Non-binary Relationship Set
 
+대부분의 관계는 2개의 엔터티 집합만 연결하는 binary relationship이지만 때로는 3개 이상의 엔터티가 같은 관계에 동시에 참여하는 경우가 존재함 
+
+이런 관계를 **non-binary relationship** 또는 **ternary(3항) relationship**이라고 부름
+
+아래는 한 학생이 어떤 프로젝트를 수행하는데, 어떤 교수의 지도를 받는 상황이다 
+
+![image](https://github.com/user-attachments/assets/5bc1b31a-eab9-42de-b4fd-4ca27a357b83)
 
 
 

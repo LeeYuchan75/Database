@@ -48,23 +48,37 @@
 
 ### matches (match_id, league_id, season, match_date, home_team_id, away_team_id, stadium, referee_name, attendance)
 
-- match_id
+- match_id : 경기 고유 ID 
 
-- league_id
+- league_id : 리그 ID
 
-- season
+- season : 시즌 정보
 
-- match_date
+- match_date : 경기 날자
 
-- home_team_id
+- home_team_id : 홈 팀 ID
 
-- away_team_id
+- away_team_id : 원정 팀 ID
 
-- stadium
+- stadium : 경기장 이름
 
-- referee_name
+- referee_name : 주심 이름
 
-- attendance
+- attendance : 관중 수
+
+<br/>
+
+### transfers (transfer_id, player_id, player_name, from_team, to_team, transfer_fee)
+
+- transfer_id : 이적 고유 ID
+
+- player_id :  이적한 선수 ID
+
+- player_name : 이적 선수 이름
+
+- from_team : 이전 소속 팀 
+
+- to_team : 새 소속 팀 
 
 
 

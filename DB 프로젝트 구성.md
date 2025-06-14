@@ -1,4 +1,4 @@
-## soccer DB 테이블 정의 
+## soccer DB 테이블 정의 (2-1 번 과정)
 
 ### Player (player_id, name, age, team, position, preferred_foot, transfer_value)
 
@@ -80,7 +80,43 @@
 
 - to_team : 새 소속 팀 
 
+<br/>
 
+### 각 테이블 문장으로 설명 (2-2 과정)
+
+### Player 테이블
+
+Player 테이블은 player_id(INT, PRIMARY KEY), name(VARCHAR, NOT NULL), age(INT, CHECK(age > 0)), team(INT, FOREIGN KEY), position(VARCHAR, NOT NULL), preferred_foot(VARCHAR, CHECK(preferred_foot IN ('left', 'right', 'both'))), transfer_value(INT, CHECK(transfer_value >= 0)) 속성으로 구성됩니다.
+각 선수는 하나의 팀에 소속되므로 team 속성은 Team 테이블의 team_id를 참조하며 1:N 관계를 형성합니다.
+
+<br/>
+
+### Team 테이블
+
+Team 테이블은 team_id(INT, PRIMARY KEY), name(VARCHAR, NOT NULL, UNIQUE), founded_year(YEAR, CHECK(founded_year >= 1800)), home_stadium(VARCHAR), league(INT, FOREIGN KEY) 속성으로 구성됩니다.
+각 팀은 하나의 리그에 속하므로 league는 Leagues 테이블의 league_id를 참조하고, 하나의 리그는 여러 팀을 가질 수 있어 1:N 관계입니다.
+
+<br/>
+
+### Leagues 테이블
+
+Leagues 테이블은 league_id(INT, PRIMARY KEY), league_name(VARCHAR, NOT NULL), country(VARCHAR), tier(INT, CHECK(tier > 0)), number_of_teams(INT, CHECK(number_of_teams >= 0)) 속성으로 구성됩니다.
+
+<br/>
+
+### Matches 테이블
+
+Matches 테이블은 match_id(INT, PRIMARY KEY), league_id(INT, FOREIGN KEY), season(YEAR), match_date(DATE), home_team_id(INT, FOREIGN KEY), away_team_id(INT, FOREIGN KEY), stadium(VARCHAR), referee_name(VARCHAR), attendance(INT, CHECK(attendance >= 0)) 속성으로 구성됩니다.
+각 경기는 하나의 리그에 속하고, 두 팀(홈, 원정)이 참여하므로 league_id, home_team_id, away_team_id는 모두 외래키이며, Team 및 Leagues 테이블과 1:N 관계입니다.
+
+<br/>
+
+### Transfers 테이블
+
+Transfers 테이블은 transfer_id(INT, PRIMARY KEY), player_id(INT, FOREIGN KEY), player_name(VARCHAR, NOT NULL), from_team(INT), to_team(INT), transfer_fee(INT, CHECK(transfer_fee >= 0)) 속성으로 구성됩니다.
+선수의 이적 정보를 저장하며, player_id는 Player 테이블과 연결되고 1:N 관계입니다.
+
+➤ 정규화 요약 (최소 3NF): 모든 테이블은 반복 속성을 제거하고, 각 속성은 기본키에만 종속되어 있으며 이행적 종속도 제거되어 있어 3NF를 만족합니다. 이는 데이터 중복 방지 및 무결성 유지를 위함입니다.
 
 
 

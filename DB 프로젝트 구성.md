@@ -54,7 +54,7 @@
 
 - season : 시즌 정보
 
-- match_date : 경기 날자
+- match_date : 경기 날찌
 
 - home_team_id : 홈 팀 ID
 
